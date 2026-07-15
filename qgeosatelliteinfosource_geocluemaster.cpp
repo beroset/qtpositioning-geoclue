@@ -39,8 +39,8 @@
 
 #include "qgeosatelliteinfosource_geocluemaster.h"
 
-#include <geoclue_interface.h>
-#include <satellite_interface.h>
+#include <geoclueinterface.h>
+#include <satelliteinterface.h>
 
 #include <QtCore/QLoggingCategory>
 #include <QtDBus/QDBusPendingCallWatcher>

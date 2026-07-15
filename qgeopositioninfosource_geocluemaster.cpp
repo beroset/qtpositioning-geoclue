@@ -41,9 +41,9 @@
 
 #include "qgeopositioninfosource_geocluemaster.h"
 
-#include <geoclue_interface.h>
-#include <position_interface.h>
-#include <velocity_interface.h>
+#include <geoclueinterface.h>
+#include <positioninterface.h>
+#include <velocityinterface.h>
 
 #include <QtCore/QDateTime>
 #include <QtCore/QFile>

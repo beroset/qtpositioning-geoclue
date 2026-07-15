@@ -39,9 +39,9 @@
 
 #include "qgeocluemaster.h"
 
-#include <master_interface.h>
-#include <geoclue_interface.h>
-#include <masterclient_interface.h>
+#include <masterinterface.h>
+#include <geoclueinterface.h>
+#include <masterclientinterface.h>
 
 #include <QtCore/QLoggingCategory>
 
