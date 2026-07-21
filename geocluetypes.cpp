@@ -70,6 +70,18 @@ const QDBusArgument &operator>>(const QDBusArgument &arg, Accuracy &accuracy)
     return dbus_argument_helper(arg, accuracy);
 }
 
+QDBusArgument &operator<<(QDBusArgument &arg, const QGeoSatelliteInfo &si)
+{
+    arg.beginStructure();
+    arg << si.satelliteIdentifier();
+    arg << qint32(si.attribute(QGeoSatelliteInfo::Elevation));
+    arg << qint32(si.attribute(QGeoSatelliteInfo::Azimuth));
+    arg << qint32(si.signalStrength());
+    arg.endStructure();
+
+    return arg;
+}
+
 const QDBusArgument &operator>>(const QDBusArgument &argument, QGeoSatelliteInfo &si)
 {
     qint32 a;

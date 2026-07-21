@@ -84,6 +84,7 @@ Q_DECLARE_TYPEINFO(Accuracy, Q_RELOCATABLE_TYPE);
 QDBusArgument &operator<<(QDBusArgument &arg, const Accuracy &accuracy);
 const QDBusArgument &operator>>(const QDBusArgument &arg, Accuracy &accuracy);
 
+QDBusArgument &operator<<(QDBusArgument &arg, const QGeoSatelliteInfo &si);
 const QDBusArgument &operator>>(const QDBusArgument &arg, QGeoSatelliteInfo &si);
 
 QT_END_NAMESPACE
