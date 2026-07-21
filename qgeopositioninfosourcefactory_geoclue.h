@@ -42,10 +42,9 @@
 #ifndef QGEOPOSITIONINFOSOURCEFACTORY_GEOCLUE_H
 #define QGEOPOSITIONINFOSOURCEFACTORY_GEOCLUE_H
 
-#include <QtCore/QObject>
-#include <QtPositioning/QGeoPositionInfoSourceFactory>
+#include <QObject>
+#include <QGeoPositionInfoSourceFactory>
 
-QT_BEGIN_NAMESPACE
 
 /*
     Qt Positioning plugin for Geoclue. This plugin supports Geoclue version 0.12.99.
@@ -65,6 +64,5 @@ public:
     QGeoAreaMonitorSource *areaMonitor(QObject *parent, const QVariantMap &parameters) override;
 };
 
-QT_END_NAMESPACE
 
 #endif
