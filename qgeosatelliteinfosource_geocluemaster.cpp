@@ -67,6 +67,8 @@ QGeoSatelliteInfoSourceGeoclueMaster::QGeoSatelliteInfoSourceGeoclueMaster(QObje
 :   QGeoSatelliteInfoSource(parent), m_master(new QGeoclueMaster(this)), m_provider(0), m_sat(0),
     m_requestTimer(this), m_error(NoError), m_satellitesChangedConnected(false), m_running(false)
 {
+    qDBusRegisterMetaType<QGeoSatelliteInfo>();
+    qDBusRegisterMetaType<QList<QGeoSatelliteInfo>>();
     connect(m_master, &QGeoclueMaster::positionProviderChanged,
             this, &QGeoSatelliteInfoSourceGeoclueMaster::positionProviderChanged);
 
