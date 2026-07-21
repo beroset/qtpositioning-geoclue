@@ -85,7 +85,6 @@ QDBusArgument &operator<<(QDBusArgument &arg, const Accuracy &accuracy);
 const QDBusArgument &operator>>(const QDBusArgument &arg, Accuracy &accuracy);
 
 const QDBusArgument &operator>>(const QDBusArgument &arg, QGeoSatelliteInfo &si);
-const QDBusArgument &operator>>(const QDBusArgument &arg, QList<QGeoSatelliteInfo> &sis);
 
 QT_END_NAMESPACE
 

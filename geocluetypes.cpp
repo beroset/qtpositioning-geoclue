@@ -87,19 +87,5 @@ const QDBusArgument &operator>>(const QDBusArgument &argument, QGeoSatelliteInfo
     return argument;
 }
 
-const QDBusArgument &operator>>(const QDBusArgument &argument, QList<QGeoSatelliteInfo> &sis)
-{
-    sis.clear();
-
-    argument.beginArray();
-    while (!argument.atEnd()) {
-        QGeoSatelliteInfo si;
-        argument >> si;
-        sis.append(si);
-    }
-    argument.endArray();
-
-    return argument;
-}
 
 QT_END_NAMESPACE
