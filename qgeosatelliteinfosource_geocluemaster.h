@@ -76,8 +76,8 @@ private slots:
     void requestUpdateTimeout();
 
     void getSatelliteFinished(QDBusPendingCallWatcher *watcher);
-    void satelliteChanged(int timestamp, int satellitesUsed, int satellitesVisible,
-                          const QList<int> &usedPrn, const QList<QGeoSatelliteInfo> &satInfos);
+    void satelliteChanged(qint32 timestamp, qint32 satellitesUsed, qint32 satellitesVisible,
+                          const QList<qint32> &usedPrn, const QList<QGeoSatelliteInfo> &satInfos);
     void satelliteChanged(const QDBusMessage &message);
 
 private:
